@@ -1,0 +1,9 @@
+@mixin text(){
+    font-size : $base-fs;
+    @include md(){
+        font-size: $base-fs;
+    }
+    @include xxl(){
+        font-size: clamp(16px, 2.3vw, 20px);
+    }
+}

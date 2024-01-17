@@ -1,0 +1,55 @@
+#about{
+    // Animation AOS crée un overflow lors de l'apparition de la div
+    overflow: hidden;
+    position: relative;
+    /**PARAMETRES TAILLE SECTION*/
+    height: 100vh;
+    // Min height pour mobile 
+    min-height: 1300px;
+    @include flex();
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    //BREAKPOINT 
+    @include md(){
+        flex-direction: row;
+        height: 100vh;
+        min-height: auto;
+    }
+    @include lg(){
+        // A partir de 960px les containers se retrouvent en lignes
+        flex-direction: row;
+        height: 80vh;   
+    }
+    @include xxl(){
+        height: 110vh;
+    }
+// PARAMETRES TEXT    
+    .text-about{
+        position: relative;
+        padding: $base-padding;
+        // Positionner les p grace a flex
+        @include flex();
+        flex-direction: column;   
+        justify-content: center;
+        /// Positionner Button 
+        
+    }
+// PARAMETRES IMAGES    
+    .img-container{
+        // Height auto sur mobile
+      
+        margin-top: 10px;
+        height: 50%;
+        position: relative;
+       
+        @include flex();
+        // Height a 100% a partir de 920px
+        @include lg(){
+            height: 100%;
+            align-items: flex-start;
+        }
+       
+    }
+   
+}

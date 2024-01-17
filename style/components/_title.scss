@@ -1,0 +1,100 @@
+//***TITLES HEADER**/
+.text-header{
+    h1{ 
+        color: $black;    
+        font-weight: 700;
+        font-size: 2rem;
+        ///**BREAKPOINT FS**/
+        @include md(){
+            font-size: 3.5rem;
+        }
+        @include lg(){
+         font-size: 5rem;
+        }
+        @include xxl(){
+            font-size: 6.5rem;
+        }
+     }
+     h2{
+       
+         color: $black;           
+         font-size: 1.7rem;
+         font-weight: 700 ;
+         //**BREAKPOINTS FS*/
+         @include md(){
+            font-size: 3rem;
+         }
+         @include lg(){
+             font-size: 3.5rem;
+            }
+         @include xxl(){
+            font-size: 4rem;
+         }   
+        //*NOM EN BLANC**/
+         &:first-child{
+             color: #fff ;    
+         }   
+     } 
+     //**COLOR TITLE TYPEWRITER***/
+    .title{
+       color :  $blue2;      
+}
+}
+///**PARAMETRES GENERAUX TITLES**/
+%title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+///***** TITLE ABOUT
+.h2-about{
+@extend %title;
+padding-top: 50px;
+//***BREAKPOINTS FS*/
+@include lg(){   
+}
+}
+//**TITLE PROJECT***/
+#projets{
+    h2{
+        @extend %title;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        color : #f1f1f1;     
+    }
+}
+//**TITLES TECHNOS**/
+#langages{
+    h2{
+        @extend %title;
+        @include lg(){
+            margin-top: 10px
+        }
+        
+    }
+}
+//***TITLE SERVICE***/
+#services{
+    h2{
+        @extend %title;
+        padding: 5px 3px;
+        @include lg(){
+            padding: 10px 10px;;
+        }
+      
+    }
+}
+//***TITLE SECTION CONTACT ***/
+.form-title{
+    text-align: center;
+    .span-contact{
+        color: $blue_darker;
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    
+    
+}

@@ -1,0 +1,63 @@
+
+form{
+    //**Button Submit**/
+    button{
+        margin: 10px auto;
+    }
+}
+//**PARAMETRES GENERAUX***/
+input, textarea{
+    max-width: 600px;
+    width: 90%;
+    display: block;
+    padding: 10px;
+    &:focus{
+        outline-color: $blue2;
+    }
+   
+}
+
+//***Paramètres TextArea**/
+textarea{
+    height: 150px;
+    resize: none;
+    &::placeholder {
+        font-family: $ff1;
+        font-style: italic;
+      }
+}
+
+//** GESTION DES ERREURS***/ 
+.form-input{
+    .error{
+        border-color:red ;
+    }
+    .error-div{
+        color: red;
+        font-size: 14px;
+        font-style: italic;
+    }
+}
+//***Gestion des Icones Partie Infos***//
+.contact-list{
+    list-style-type: none;
+    
+    .fa{
+        color: $blue2;
+    }
+    span{
+        color: $blue2;
+    }
+    .name{
+        margin-left: 10px ;
+    }
+    .place{
+        margin-left: 13px ;
+    }
+    .phone{
+        margin-left: 7px ;
+    }
+    .gmail{
+        margin-left: 10px;
+    }
+}

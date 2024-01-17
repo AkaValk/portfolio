@@ -1,0 +1,10 @@
+#projets {
+    height: 100vh;
+    background-color: $dark;
+    @include md(){
+        height: 80vh;
+    } 
+    @include lg(){
+        height: 90vh;
+    }
+    }

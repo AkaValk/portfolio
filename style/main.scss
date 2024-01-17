@@ -1,0 +1,40 @@
+@use "sass:map";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import "_var.scss";
+@import "_base.scss";
+
+
+@import "utils/_breakpoints";
+
+
+
+@import "mixins/_mixin_position";
+@import "mixins/_mixin_flex";
+@import "mixins/mixin_text";
+@import "mixins/mixin_delay";
+@import "mixins/mixin_animation";
+@import "mixins/mixin_neon";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/_about";
+@import "layout/langages.scss";
+@import "layout/_projets.scss";
+@import "layout/services";
+@import "layout/_form";
+
+@import "components/_hr";
+@import "components/_buttons";
+@import "components/_card";
+@import "components/container";
+@import "components/_icons";
+@import "components/text"; 
+@import "components/title";
+@import "components/input.scss";
+@import "components/carousel.scss";
+@import "components/nav";
+@import "components/_loader";
+@import "components/img";
+
+
+@import "utils/_dark_mode";

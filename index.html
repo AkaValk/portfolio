@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="is-smooth-scroll-compatible is-loaded is-ready has-scroll-init has-scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link href="/style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+</head>
+    <nav class="navbar">
+        
+        <a href="#" class="navbar-brand">Lauréanne</a>
+        <button class="btn-toggler">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+
+    </nav>
+    <div class="navbar-menu">
+        
+        <a href="#home" class="navlink home" > Accueil</a>
+        <a href="#about" class="navlink about" >About</a>
+        <a href="#projets" class=" navlink projets"> Projets</a>
+        <a href="#services" class="navlink services"> Services</a>
+        <a href="#contact" class="navlink contact"> Contact</a>
+        <button class="btn-mode"><img src="/ressources/moon.svg" alt="moon"></button>
+    </div>
+    <!--DEBUT HEADER-->
+
+    <header id="home">
+        <!--Regrouper les différents élements et pouvoir les positionner en même temps-->
+        <div class="text-header">
+            <h2 data-aos="fade-down" data-aos-duration="1300">Bonjour je suis Lauréanne!</h2>
+            <h1 data-aos="fade-right" data-aos-duration="1500">Développeuse web</h1>
+            <h2 class="title" data-aos="fade-right" data-aos-duration="1600">Front-end et back-end</h2>
+            <button class="btn-blue btn-flip btn-projet" title="Mes Projets">Mes projets</button>
+        </div>
+    </header>
+    <!--FIN HEADER-->
+    <!--Title Transition-->
+    <h2 class="h2-about" data-aos="fade-down">A propos de moi</h2>
+    <hr>
+    <!-- DEBUT SECTION ABOUT--->
+    <section id="about">
+        <!--TEXT ABOUT-->
+        <div class="text-about container-flex" data-aos="fade-right" data-aos-duration="1000">
+            <p>
+                Bonjour et bienvenue sur mon portfolio ! Je suis une passionnée d'informatique et de développement web. 
+                
+            </p>
+            <p>
+                J'ai déjà une expérience pratique en développement web, ayant créé une application web lors de mon stage de formation de Développeur web et web mobile. 
+                Cette expérience m'a permis de consolider mes compétences en terme de développement et d'améliorer mes compétences avec le client.</p>
+            <p>
+                Je suis très curieuse et j'aime découvrir de nouvelles technologies et apprendre de nouvelles techniques pour améliorer mes compétences. 
+                En plus du développement, j'ai d'autres passions, la pâtisserie et la natation, je suis aussi une grande amatrice de café, boisson délicieuse qui me permet de tenir mes nuits blanches.
+            </p>
+            <p> Je suis actuellement à la recherche d'un contrat d'apprentissage pour effectuer ma formation de Concepteur Développeur d'application à partir de Mars 2024. Je suis passionnée par les défis et j'ai hâte de relever de nouveaux challenges pour améliorer mes compétences. 
+            </p>
+            <button type="button" class="btn-blue btn-3d btn-contact">Contact</button>
+        </div>
+        <!--FIN TEXT ABOUT-->
+        <!--DIV IMAGE-->
+        <div class="img-container container-flex" data-aos="fade-left" data-aos-duration="1000">
+            <!--Pour animation-->
+            <div class="shine">
+                <span></span>
+                <img src="/ressources/me.jpg" class="pic-about">
+            </div>
+            
+        </div>
+        <!--FIN DIV IMAGE-->
+    </section>
+    <!--FIN SECTION-->
+    <!--DEBUT SECTION TECHNOS-->
+    <section id="langages">
+        <h2 data-aos="fade-down">Mes langages</h2>
+        <hr>
+        <div class="icons-container">
+            <div class="icon" data-aos="fade-down" data-aos-duration="900">
+                <img src="/ressources/html.png" alt="html-icon">
+                <p>HTML</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-duration="900" >
+                <img src="/ressources/Css.png" alt="css-icon">
+                <p>CSS</p>
+            </div>
+            <div class="icon" data-aos="fade-down" data-aos-duration="900">
+                <img src="/ressources/js.png" alt="js-icon">
+                <p>Javascript</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-duration="900" >
+                <img src="/ressources/php.png" alt="php-icon">
+                <p>Php</p>
+            </div>
+            <div class="icon" data-aos="fade-down" data-aos-duration="900" >
+                <img src="/ressources/symfony.png"alt="symfony-icon">
+                <p>Symfony</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-duration="900">
+                <img src="/ressources/react.png" alt="react-icon">
+                <p>React</p>
+            </div>
+            <div class="icon" data-aos="fade-down" data-aos-duration="900">
+                <img src="/ressources/node.png" alt="node-icon">
+                <p>Node.js</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-duration="900">
+                <img src="/ressources/wordpress.png" alt="wp-icon">
+                <p>Wordpress</p>
+            </div>
+            <div class="icon" data-aos="fade-down" >
+                <img src="/ressources/bootstrap.png" alt="bootstrap-icon">
+                <p>Bootstrap</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-duration="900">
+                <img src="/ressources/sass.png" alt="sass-icon">
+                <p>Sass</p>
+            </div>
+            <div class="icon" data-aos="fade-down" data-aos-duration="900" >
+                <img src="/ressources/sql.png" alt="sql-icon">
+                <p>SQL</p>
+            </div>
+            <div class="icon" data-aos="fade-up" data-aos-duration="900">
+                <img src="/ressources/Git.png" alt="git-icon">
+                <p>Git</p>
+            </div>
+            <div class="icon" data-aos="fade-down" data-aos-duration="900">
+                <img src="/ressources/mongo.png" alt="mongo-icon">
+                <p>Mongo DB</p>
+            </div>
+        </div>
+    </section>
+<!--FIN SECTION TECHNO-->
+
+<!--SECTION PROJETS-->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <!--Slider Container-->
+        <div class="container-projets swiper mySlider">
+        <div class="slider-container">
+            
+                <!--WRAPPER POUR CAROUSEL-->
+                <div class="swiper-wrapper">
+                    <!---DEBUT DES SLIDES/ CARDS-->
+                    <!--CARD 1-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <div class="card-img">
+                                <img src="ressources/voyage.jpg" alt="projet-1">
+                            </div>   
+                        </div>
+                       
+                        <div class="card-body">
+                            <h3 class="card-title">Blog Voyage</h3>
+                            <p class="card-text">Blog Voyage crée en utilisant Symfony, Twig, Doctrine et MySQL</p>
+                              
+                        </div>
+                    </div>
+                       <!--CARD 2--> 
+                    <div class="card swiper-slide">
+                        <div class="image-content"> 
+                            <div class="card-img">
+                                <img src="/ressources/canin.png" alt="projet-2">
+                            </div>  
+                        </div>
+                        
+                        <div class="card-body">
+                            <h3 class="card-title">So & Canin</h3>
+                            <p class="card-text">Site Vitrine crée en utilisant HTML, CSS, Javascript et PHP</p>
+                                        
+                        </div>
+                    </div>
+                       <!--CARD 3-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-img">
+                                <img src="/ressources/reseau.jpg" alt="projet-3">
+                            </div>
+                        </div>
+                    
+                        <div class="card-body">
+                            <h3 class="card-title">Raccoont</h3>
+                            <p class="card-text">Clone Twitter crée en utilisant React Node JS Express et MongoDB </p>
+                                    
+                        </div>
+                    </div>
+                       <!--CARD 4-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-img">
+                                <img src="/ressources/projet_bootstrap.png" alt="projet-4">
+                            </div>
+                        </div>
+            
+                        <div class="card-body">
+                            <h3 class="card-title">Site Technologies</h3>
+                            <p class="card-text">Site crée en utilisant BootStrap</p>
+                                 
+                        </div>
+                    </div>
+                    <!--CARD 5-->
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-img">
+                                <img src="/ressources/georgia.png" alt="projet-5">
+                            </div>
+                        </div>
+                       
+                        <div class="card-body">
+                            <h3 class="card-title">Georgia Restaurant</h3>
+                            <p class="card-text">Site Restaurant crée en utilsant HTML et Sass</p>
+                                      
+                        </div>
+                    </div>
+                <!--FIN WRAPPER-->    
+                </div>
+            <!--FIN SLIDER CONTAINER--->
+            </div>
+            <!---Pagination-->
+            <div class="swiper-pagination"></div>
+              <!--FIN SLIDER -->
+        </div>
+      
+        
+        
+    </section>
+<!--FIN SECTION PROJETS-->
+
+<!--DEBUTS SECTION SERVICES-->
+    <section  id="services">
+        <div class="text container-flex" data-aos="zoom-in-up" data-aos-duration="1100">
+            <h2>Je suis actuellement à la recherche d'un contrat d'apprentissage</h2>
+            <p>Si vous cherchez une personne de : </p>
+            <ul>
+                <li> Motivée à s'améliorer</li>
+                <li>Ouverte à la critique</li>
+                <li> Capable à travailler en équipe</li>
+                <li>Déja opérationnelle</li>
+                <li>Calme et pédagogue</li>
+            </ul>
+            <p>Vous pouvez me joindre au 06 69 48 09 14 ou me contacter en passant par le formulaire de contact</p>
+        </div>
+        <!--BG DIV-->
+        <div class="bg-container container-flex" data-aos="zoom-in-down" data-aos-duration="1200">
+
+        </div>
+    </section>
+<!--FIN SECTION SERVICES-->
+<!--DEBUT SECTION FORM-->
+    <section id="contact">
+        <h2 class="form-title">Me <span class="span-contact">Contacter</span></h2>
+        <!--WRAPPER-->    
+        <div class="container-container">
+            <!--PARTIE INFOS-->
+            <div class="container-flex infos-container">
+                <h2>Mes Informations</h2>
+                <p class="lead">Si vous avez des questions, n'hésitez pas à me contacter</p>
+                <!--Icones + Infos-->
+                <ul class="contact-list">
+                    <li class="list-item"><i class="fa fa-solid fa-user fa-2x"><span class="contact-text name">Lauréanne
+                                Drozdz</span></i></li>
+                    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Auxerre,
+                                France</span></i></li>
+                    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone">06 69 48 09
+                                14</a></span></i></li>
+                    <li class="list-item"><i class="fa fa-envelope fa-2x"><span
+                                class="contact-text gmail">laure.drozdz@live.fr</span></i></li>
+                </ul>
+                <button class=" p-3 btn-blue btn-wave btn-cv">Télécharger</button>
+            </div>
+            <!--FIN PARTIE INFO-->
+            <!--PARTIE FORM-->
+            <div class="form-container container-flex">
+                <h2>M'envoyer un message</h2>
+                <form>
+                    <div class="form-input">
+                        <label for="name">Nom et Prénom</label>
+                        <input type="text" id="name" name="name" placeholder="ex : John Doe">
+                        <div class="error-div"></div>
+                    </div>
+    
+                    <div class="form-input">
+                        <label for="mail">Email</label>
+                        <input type="text" id="mail" name="mail" placeholder="ex : johnDoe@mail.com">
+                        <div class="error-div"></div>
+                    </div>
+                    <div class="form-input">
+                        <label for="object">Sujet</label>
+                        <input type="text" id="object" name="object" placeholder="L'objet de votre mail">
+                        <div class="error-div"></div>
+                    </div>
+                    <div class="form-input">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message ici"></textarea>
+                        <div class="error-div"></div>
+                    </div>
+                    <div class="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="form-message"></div>
+                    <button class="btn-blue btn-submit" type="submit">Envoyer</button>
+                </form>
+            </div>
+            <!--FIN PARTIE FORM-->
+        </div>    
+    </section>
+
+<!--FIN SECTION FORM/ INFOS-->
+    <footer>
+        <p>Portfolio crée par Lauréanne Drozdz avec beaucoup de café ☕ </p>
+    </footer>
+
+<!--INTEGRATION DES SCRIPTS-->
+
+   
+<script src="/js/typewriter.js"></script>
+<script>
+    AOS.init();
+  </script>
+<script src="/js/app.js"></script>
+
+
+
+<script src="/js/carousel.js"></script>
+    <script src="/js/darkmode.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/mail.js"></script>
+</body>
+
+</html>

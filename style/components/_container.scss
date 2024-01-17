@@ -1,0 +1,14 @@
+//****SECTION Tjrs a 100% de la taille d'écran***/
+section{
+    width: 100%;  
+}
+ //** A partir de 720px les containers font la moitié de la taille de l'écran*/
+.container-flex{
+    width: 100%;
+    height: auto;
+   
+    @include md(){
+        width: 50%;
+    }
+}
+

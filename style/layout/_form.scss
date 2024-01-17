@@ -1,0 +1,37 @@
+
+///***PARAMETRES CONTACT FORM**/
+#contact{
+    background-color: #FAFAFA;
+    height: 100vh;
+    min-height : 1000px;
+    //**BREAKPOINTS*/
+    @include md(){
+        height: 70vh;
+        min-height: auto;
+    }
+    @include lg(){
+       
+        height: 90vh;
+    }
+    @include xxl(){
+        height: 70vh;
+    }
+    //**PARAMETRES CONTAINER QUI CONTIENT INFO ET FORM**/
+    .container-container{
+        padding: 5px;
+        @include flex();
+        flex-direction: column;  
+        align-items: flex-start;
+       //**BREAKPOINTS  **/
+       @include md(){
+        flex-direction: row;
+       }
+       .infos-container{
+        @include xxl(){
+            margin-left: 20vh;
+        }
+       
+       }
+    }
+    
+}

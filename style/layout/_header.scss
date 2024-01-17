@@ -1,0 +1,22 @@
+header{
+    // Taille Mobile
+    width: 100%;
+    height: 75vh;
+    //**BACKGROUND**/
+    background: linear-gradient(rgba(#171717, .3), rgba(#171717, .3)), url(/ressources/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    //**BREAKPOINTS HEADER**/
+    @include md(){
+         height: 100vh;
+    }
+    .text-header{
+        width: 80%;
+     
+        // Positionner Header grace a display flex sur parent + margin pour center
+        @include position();
+    } 
+    
+}

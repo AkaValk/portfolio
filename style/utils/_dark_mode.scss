@@ -1,0 +1,109 @@
+.dark-mode{
+    //**Paramètres généraux*/
+    color: #f1f1f1;
+    background-color: $dark;
+    ///**Paramètres nav*/
+    nav{
+        &.scrolled{
+            background-color: $purple3;
+        }
+    }
+    ///**Animation Title***/
+    .title{
+      color: $purple3 !important;
+      text-shadow: 1px 1px 1px $black;
+    }
+    //**Animation Btn Header*/
+    .btn-flip{
+        &::before,::after{
+            border-color: $purple3;
+        }
+        &::before{
+            background-color: $purple3 ;
+        }
+        &::after{
+            border-color: $purple3;
+            color: $purple3;
+        }
+    }
+    //**Section Contact**/
+    #contact{
+        background-color: #3f3f3f;
+        .contact-text{
+            color: #f1f1f1;
+        }
+        .form-title{
+            span{
+                color: $purple3; 
+            }
+        }
+        form{
+            input, textarea{
+                &:focus{
+                    outline-color: $purple3;
+                }
+            }
+        }
+        //**Partie Infos**/
+        .infos-container{
+            .contact-list{
+                //**Parametres Icons Contact**/
+                .fa{
+                   color: $purple3; 
+                   span{
+                    color: $white;
+                   }
+                }
+            }
+           ///***Parametres Btn CV**/
+           .btn-wave{ 
+            &:hover{
+                &::before{
+                    background-color: $purple1;
+                }
+            }
+           } 
+        }   
+    }
+    //**Section Techno*/
+    #langages{
+        background-color: $dark-100;
+        color: $black;
+    }
+    //**Section Services**/
+#services{
+        .text{
+            background-color: $purple2 !important;
+        }
+        .bg-container{
+            background-color:$dark-lighter !important;
+        }
+    }
+    //**Paramètres Footer*/
+    footer{
+        background-color: $purple3;
+    }
+    //*Section Projets*/
+    #projets{
+        .image-content{
+            background-color: $dark-100;
+        }
+        .card-body{
+           background-color: $purple2;
+           h3{
+            color: $white;
+
+           }
+           .card-text{
+            color: $white;
+           }
+        }
+    }
+    //*Parametres Title*/
+    h2{
+        color: $white;
+    }
+    .btn-submit{
+        @include glow($purple1)
+    }
+}

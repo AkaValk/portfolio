@@ -1,0 +1,24 @@
+.loader{
+    display: none;
+    margin: 5px;
+    span{
+        margin-right: 4px;
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: $blue2;
+        animation: fade 1500ms ease infinite;
+        @include animation_delay()
+        
+    }
+ 
+}
+
+@keyframes fade {
+    50% {
+        transform: translateY(-7px);
+        opacity: 0;
+      }
+    
+}

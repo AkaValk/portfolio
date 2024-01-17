@@ -1,0 +1,14 @@
+footer{
+    height: 100px;
+    text-align: center;
+    background-color: $blue2;
+    @include flex();
+    @include lg(){
+        height: 75px;
+        
+    }
+    position: relative;
+    bottom: 0;
+    left: 0;
+ 
+}

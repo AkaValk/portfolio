@@ -1,0 +1,57 @@
+//**TEXT ABOUT**/
+.text-about{
+    p{  
+        width: 100%;
+        @include text();
+        @include lg(){
+            margin-bottom: 9px;
+        
+        }
+        @include xxl(){
+            width: 95%;
+        }
+    }
+}
+//***Text Icons**/
+.icon{
+    p
+    {   @include text(); 
+        text-align: center;
+        font-weight: 700;
+     }   
+}
+//**TEXT SERVICES**/
+#services{ 
+    p{  @include text();
+        padding: 10px 10px;
+       
+    }
+    ul{
+        padding: 10px
+    }
+    ul>li{
+        
+        @include text();
+        list-style: none;
+        font-style: 700 ;
+    }
+}
+.lead{
+    font-size: 1rem ;
+    font-style: italic;
+    overflow: hidden;
+}
+//**TEXT INFO FORM**/
+.contact-text{
+    font-family: $ff1;
+    @include text();
+    
+}
+//**TEXT FOOTER**/
+footer{
+    p{  
+        @include text();
+        
+        
+    }
+}

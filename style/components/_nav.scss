@@ -1,0 +1,229 @@
+.navbar {
+      //* PARAMETRES NAVBAR GENERAL**/
+  width: 100%;
+  height: 6%;
+  background-color: transparent;
+  position: fixed;
+  z-index: 5;
+  @include flex()   ;
+   //**LORSQUE SCROLL TRANSPARENT TO BLUE/VIOLET**/
+   &.scrolled {
+    background-color: $blue2;
+  }    
+
+  
+  //**BRAND PARAMETRES**/
+  &-brand {
+    margin-right: auto;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+    line-height: 75px;
+  }
+}
+
+
+///**PARAMETRES MENU NAVIGATION*/
+.navbar-menu {
+  ///**POUR ANIMATION*/
+  
+  transition: top 500ms ease;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 6%;
+  z-index: 4;
+  @include flex();
+  flex-direction: column;
+  ///**LORSQUE SCREEN =DESKTOP Tjrs présent**/ 
+  @include lg() {
+    top :0;
+    background-color: transparent;
+    flex-direction: row;
+    position: fixed;
+    align-items: center;
+    z-index: 56;
+  }
+ //**PARAMETRES OVERLAY MENU HAMBURGER/
+ &::before, &::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: transform 500ms ease;
+  background-color: $blue2;
+  z-index: 5;
+}
+//**LEFT OVERLAY**/
+&::before{
+  left: 0;
+  transform: skew(50deg) translateX(-200%) ;
+  clip: rect(auto 51vw auto auto);
+}
+//**RIGHT OVERLAY*/
+&::after{
+  right: 0;
+  transform: skew(50deg) translateX(200%) ;
+  clip: rect(auto auto auto 50vw);
+}
+  
+  //**Lorsque Menu hamburger est cliqué*/
+  &.open {
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    //**RESET A ET BTN*/
+    a:first-child{
+      margin: 0;
+    }
+    .btn-mode{
+      margin-left: 0;
+    }
+    //******/
+    &::before{
+      transform: skew(0) translateX(0);
+    }
+    &::after{
+      transform: skew(0) translateX(0) ;
+    }
+    
+  }
+   
+}
+  //** PARAMETRES BUTTON MENU HAMBURGER**/ 
+    //** PARAMETRES BUTTON**/ 
+    .btn-toggler {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0%;
+      right: 5%;
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      justify-content: space-evenly;
+      border: none;
+      cursor: pointer;
+      z-index: 6;
+
+      //**BREAKPOINT FAIRE DISPARAITRE MENU HAMBURGER A 920px**/
+      @include lg() {
+        display: none;
+      }
+     
+      //***LINES MENU HAMBURGER**/
+      .line {
+          width: 60%;
+          background-color: $white;
+          height: 2px;
+          transform-origin: center;
+          transition: all ;
+          
+      } 
+      //**ANIMATION LINES LORSQUE BTN EST CLIQUE**/   
+      &.is-active{
+          .line{
+              &-1{
+                @include animation($duration : cubic-bezier(0.785, 0.135, 0.15, 0.86), $name :line1, $iteration:forward){
+                    from{
+                      transform: translateY(0) rotate(0deg);
+                    }
+                    to{
+                      transform: translateY(13px) rotate(45deg);
+                    }
+                }
+              }
+              &-2{ 
+                transform: scale(0);
+                transition: transform .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+              }  
+              &-3{
+                @include animation($duration : cubic-bezier(0.785, 0.135, 0.15, 0.86), $name :line2, $iteration:forward){
+                  from{
+                    transform: translateY(0) rotate(0deg);
+                  }
+                  to{
+                    transform: translateY(-13px) rotate(-45deg);
+                  }  
+                }
+              }
+          }
+         
+      }  
+  }
+//*PARAMETRES LINKS */
+.navlink {
+  //display: block;
+  color: $black;
+  padding: $base-padding;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: all 0.4s ease-in-out 0s;
+  font-family: $ff2;
+  position: relative;
+  z-index: 7;
+  @include md(){
+    //margin: auto;
+  }
+  //***LORSQUE LIEN EST CLIQUé**/
+  &.active {
+    color: $white;
+
+  }
+  
+  ///***PARAMETRES GENERAUX TRAIT HOVER**/ 
+  &::before, &::after {
+    content: "";
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
+    z-index: 5;
+  }
+  ///**PREMIER TRAIT***/ 
+  &::before{
+    transform-origin: right;
+    bottom: 5px;
+  }
+  //**DEUXIEME TRAIT*/
+  &::after{
+    transform-origin: left;
+    bottom: 0px;
+  }
+  &:hover {
+   
+    &::before {
+        transform-origin:left;
+        transform: scale(1);
+    }
+    &::after{
+        transform-origin:right;
+        transform:scale(1)
+    }
+  }
+  &:first-child{
+    margin-left: auto;
+  }
+}
+//**DARK MODE TOGGLER***/
+.btn-mode{
+ 
+    margin-left: auto;
+    position: relative;
+    top: 35%;
+    right: 0;
+    transform: translate(-50%,-50%
+    );
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+ 

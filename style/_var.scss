@@ -1,0 +1,52 @@
+@use "sass:math";
+
+//**Palette Color*/
+$purple1 : #815AC0;
+$purple2:#645474;
+$purple3 : #846A91;
+
+$blue : #4FC4CF; 
+$white : #fff;
+$black : #000;
+$blue2: #84CFE9;
+$dark-100 : #3f3f3f;
+$dark-lighter : #333;
+$dark : #212221;
+$blue_darker : #84c7e9 ;
+
+//**MAP breakpoint*/
+$breakpoints:(
+    "xs":0px,
+    "s": 400px,
+    "md": 720px,
+    "lg": 960px,
+    "xxl": 1200px
+);
+//*** MAP BTN COLOR//*
+$colors-btn : (
+    "purple" : $purple1,
+    "blue": $blue_darker
+);
+
+//Font-Family
+$ff1 : "Poppins", sans-serif;
+$ff2 : "DM Sans", sans-serif;
+//Font-size
+$base-fs : 14px;
+//Spacers
+$base-margin : 0.75rem;
+$base-padding : 0.75rem;
+
+
+//Buttons
+$btn-width : 150px;
+$btn-height : 64px;
+$btn-color : $white;
+$btn-padding:$base-padding;
+
+
+
+
+
+
+

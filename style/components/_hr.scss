@@ -1,0 +1,11 @@
+
+hr{
+    width: 200px;
+    background-color: black;
+    height: 1px;
+    margin: 20px auto;
+    box-shadow: none;
+    @include lg(){
+        width: 500px;
+    }
+}
